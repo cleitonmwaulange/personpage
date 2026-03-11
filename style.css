@@ -16,13 +16,13 @@ main section {
     width: 95%;
     max-width: 800px;
     margin: auto;
+    background-color: #fff;
+     border-radius: 15px;
+    overflow: hidden;
 }
 
 main section#top {
-    background-color: #fff;
     margin-bottom: 30px;
-    border-radius: 15px;
-    overflow: hidden;
 }
 
 main section#top div.top div.fundo {
@@ -115,3 +115,44 @@ main section#top div.botoes a#btnseguir {
     color: white;
 }
 
+main section#baixo div.botoes {
+    padding: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main section#baixo div.botoes a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+main section#baixo div.botoes a:hover {
+    background-color: #505377;
+    color: #fff;
+}
+
+main section#baixo div.botoes a.ativo {
+    border-bottom: 2.5px solid #505377;
+}
+
+main section#baixo div.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+main section#baixo div.imagens a {
+    width: 32%;
+}
+
+main section#baixo div.imagens a img {
+    height: 100%;
+    width: 100%;
+}
