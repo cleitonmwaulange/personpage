@@ -8,7 +8,7 @@
 
 
 main {
-    background-color: blueviolet;
+    background-color: #ccc;
     padding: 20px 0;
 }
 
@@ -146,13 +146,21 @@ main section#baixo div.imagens {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 5px;
+    padding-bottom: 15px;
+    overflow: hidden;
 }
 
 main section#baixo div.imagens a {
-    width: 32%;
+    width: 31%;
+overflow: hidden;
+}
+
+main section#baixo div.imagens a:hover img{
+    transform: scale(1.2);
 }
 
 main section#baixo div.imagens a img {
     height: 100%;
     width: 100%;
+    transition: 0.5s ease-in-out;
 }
